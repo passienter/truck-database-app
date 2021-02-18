@@ -1,6 +1,12 @@
-# cs-353-truck
+# Truck Dealership App
+Final project for Comp 353
 
-Final project for cs-353
+Tools used: Flask, Python, MySQL
+
+# ER Diagram
+<img src="er_diagram.png">
+
+
 
 Templates:
 
