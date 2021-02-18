@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block content %}
+    {% for truck in truck %}
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <!--<a class="mr-2" href="#">{{ truck }}</a> <br/>-->
+              <h2>{{ truck.make }} - {{ truck.model }} <span style="text-size: 12pt"><a href="{{ url_for('delete_vehicle', vehicleid=truck.vehicleid) }}">Delete</a></span></h2>
+              <h6>Color: <span style="background-color: {{ truck.color }}">{{ truck.color }}</span></h6>
+              <h6>Year: {{ truck.year }}</h6>
+              <h6>Price: {{ truck.price }}</h6>
+              
+            </div>
+          </div>
+        </article>
+     {% endfor %}
+
+	
+{% endblock content %}
